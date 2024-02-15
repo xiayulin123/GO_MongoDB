@@ -5,7 +5,7 @@ import (
 	"gopkg.in/mgo.v2"
 	"net/http"
 
-	"github.com/xiayulin123/GO_MongoDB"
+	"github.com/xiayulin123/GO_MongoDB/controllers"
 )
 
 func main(){
