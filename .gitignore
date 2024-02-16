@@ -1,3 +1,4 @@
 vendor/*
 go.mod
 go.sum
+GO_MongoDB

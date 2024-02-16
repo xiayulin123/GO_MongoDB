@@ -15,12 +15,12 @@ func main(){
 	r.POST("/user", url.CreateUser)
 	r.DELETE("/user/:id", url.DeleteUser)
 
-	http.ListenAndServe("localhost://9000", r)
+	http.ListenAndServe("localhost:9000", r)
 
 }
 
 func getSession() *mgo.Session {
-	session, err := mgo.Dial("mongodb://localhost:27107")
+	session, err := mgo.Dial("mongodb://127.0.0.1:27017")
 	if err != nil{
 		panic(err)
 	}
